@@ -2,48 +2,40 @@ package at.htl.exam01.document;
 
 public class Email extends Document {
 
-    private  String name;
-    private  String schreiben;
-    private  String empfaenger;
+
+    private  String subject;
+    private  String to;
 
 
-    public Email(String name , String schreiben, String empfaenger){
-        super();
-        setName(name);
-        setSchreiben(schreiben);
-        setEmpfaenger(empfaenger);
+    public Email(String name , String subject, String to){
+        super(name);
+        setSubject(subject);
+        setTo(to);
 
     }
 
 
     @Override
     public String toString() {
-        return "Email: " + getSchreiben() + " von " + getName() + " an " +getEmpfaenger() ;
+        return "Email: " + getSubject() + " von " + getAuthor() + " an " + getTo() ;
     }
 
 
-    // Getter und Setter
-    public String getName() {
-        return name;
+
+
+    public String getSubject() {
+        return subject;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setSubject(String subject) {
+        this.subject = subject;
     }
 
-    public String getSchreiben() {
-        return schreiben;
+    public String getTo() {
+        return to;
     }
 
-    public void setSchreiben(String schreiben) {
-        this.schreiben = schreiben;
-    }
-
-    public String getEmpfaenger() {
-        return empfaenger;
-    }
-
-    public void setEmpfaenger(String empfänger) {
-        this.empfaenger = empfänger;
+    public void setTo(String empfänger) {
+        this.to = empfänger;
     }
 }

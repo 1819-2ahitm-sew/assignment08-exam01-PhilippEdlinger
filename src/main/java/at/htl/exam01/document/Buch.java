@@ -3,40 +3,31 @@ package at.htl.exam01.document;
 public class Buch extends Document {
 
 
-    private  String autor;
-    private String titel;
+
+    private String title;
 
     public  Buch (){
 
     }
 
-    public  Buch (String autor, String  titel){
-        super();
-        setAutor(autor);
-        setTitel(titel);
+    public  Buch (String autor, String title){
+        super(autor);
+        setTitle(title);
     }
 
 
     @Override
     public String toString() {
-        return "Book: " + getTitel() + " von " + getAutor();
+        return "Book: " + getTitle() + " von " + super.getAuthor();
     }
 
 
     // Getter und Setter
-    public String getAutor() {
-        return autor;
+    public String getTitle() {
+        return title;
     }
 
-    public void setAutor(String autor) {
-        this.autor = autor;
-    }
-
-    public String getTitel() {
-        return titel;
-    }
-
-    public void setTitel(String titel) {
-        this.titel = titel;
+    public void setTitle(String title) {
+        this.title = title;
     }
 }

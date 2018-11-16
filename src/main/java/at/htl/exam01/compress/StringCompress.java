@@ -20,7 +20,6 @@ public class StringCompress {
         String[] text = sc.readFromFile(FILE_NAME);
         sc.print(text);
 
-
     }
 
 
@@ -36,8 +35,7 @@ public class StringCompress {
      * 4C
      *
      * ergibt eine String-Array mit 3 Elementen
-     * AAAAA
-     * BBB
+     * AAAAA     * BBB
      * CCCC
      *
      * @param fileName
@@ -77,9 +75,19 @@ public class StringCompress {
      * @param lines String-Array
      */
     public void print(String[] lines) {
-        String test = "A5";
-        String [] test1 = test.split("5");
 
+        String[] seperateLet = new String[2];
+        String[] seperateInt = new String[2];
+
+        String t = "A5";
+        t.charAt(1);
+        System.out.println(t);
+
+            for (int i = 0; i < lines.length ; i++){
+                seperateInt = lines[i].split("a" );
+
+                System.out.println(seperateInt[0]);
+            }
 
     }
 
@@ -92,7 +100,6 @@ public class StringCompress {
     public int getNoOfLines(String fileName) {
         int counter = 0;
         try {
-
 
             Scanner secondScanner = new Scanner(new FileReader(fileName));
             while (secondScanner.hasNextLine()){
