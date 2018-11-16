@@ -63,7 +63,6 @@ public class StringCompress {
             }
 
 
-
         return myText;
     }
 
@@ -76,17 +75,16 @@ public class StringCompress {
      */
     public void print(String[] lines) {
 
-        String[] seperateLet = new String[2];
-        String[] seperateInt = new String[2];
 
-        String t = "A5";
-        t.charAt(1);
-        System.out.println(t);
+        String character;
+        int number;
+
 
             for (int i = 0; i < lines.length ; i++){
-                seperateInt = lines[i].split("a" );
 
-                System.out.println(seperateInt[0]);
+                character = lines[i].substring(0);
+                //number = (int)lines[i].substring(1);
+
             }
 
     }
