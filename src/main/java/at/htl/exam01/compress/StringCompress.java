@@ -82,9 +82,17 @@ public class StringCompress {
 
             for (int i = 0; i < lines.length ; i++){
 
-                character = lines[i].substring(0);
-                //number = (int)lines[i].substring(1);
+                number = Integer.parseInt( lines[i].substring(1));
+                String[] splitTxt = lines[i].split(""+number);
+                character = splitTxt[0];
 
+                for (int k = 0; k < number; k++){
+
+                    System.out.print(character);
+
+                }
+
+                System.out.println();
             }
 
     }

@@ -2,7 +2,7 @@ package at.htl.exam01.document;
 
 public abstract class Document {
 
-    String author;
+    private String  author;
     public abstract  String toString();
 
     public Document(){

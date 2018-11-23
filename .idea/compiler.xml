@@ -7,6 +7,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="1819_2ahitm_sew_exam01" />
+        <module name="assignment08-exam01-PhilippEdlinger" />
         <module name="Exam01" />
         <module name="exam01" />
       </profile>
